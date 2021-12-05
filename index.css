@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+span{
+    width: 2em;
+    background-color: rgb(30, 210, 195);
+    height: 2em;
+    border-radius: 100%;
+    margin: 5px;
+    animation: move 0.6s infinite alternate;
+}
+#s2{
+    animation-delay: 0.5s;
+}
+#s3{
+    animation-delay: 1s;
+}
+
+
+@keyframes move {
+ from{
+     width: 2em;
+     height: 2em;
+     opacity: 0.5;
+     transform: translate3d(0);
+ }   
+ to{
+     width: 1em;
+     height: 1em;
+     opacity: 1;
+     transform: translate3d(0,-1rem,0);
+ }
+}
+
+@media screen and (max-width:500px){
+    body{
+        margin-top: 50%;
+    }
+}
